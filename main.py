@@ -4,4 +4,3 @@ if __name__ == "__main__":
     api_key = ""
     years = 1
     final_response(years, api_key)
-
