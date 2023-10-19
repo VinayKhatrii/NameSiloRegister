@@ -1,0 +1,38 @@
+This script makes API calls to register a domain with NameSilo using their registerDomainDrop API endpoint.
+The script reads domain names from a 'domains.txt' file, makes a call for each domain name and writes the response to an XML file.
+The script then reads the XML file to retrieve the response code and prints a detailed response message based on the response code.
+The API call is made with private registration enabled.
+
+Requirements:
+- A valid API key for NameSilo.
+- A 'domains.txt' file containing domain names to be registered, one domain name per line.
+
+
+One who is using this script have to:
+--Paste the domain(s) in "domains.txt" file
+The script will read domains.txt file when we run the main program named as "main.py"
+
+
+Running the main program will call other python files to complete the requests and get the reponse according to the results.
+
+
+
+---errorCalls.py
+
+This script contains the dictionary of the error codes mentioned in namesilo's api end
+
+
+
+---__Pycache__
+This folder is automatically created when running the program..this is basically a compiled code for python program...
+
+
+
+response.xml
+This is XML file which is updates on each call...python reads this file and give results accordingly
+
+
+testApi.py
+This file is the backbone of the whole script.
+Contains all the necessary modules and callbacks as well as methods
+
