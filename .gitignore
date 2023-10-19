@@ -1,1 +1,2 @@
-/site_packages
+/venv
+/main_files/__pycache__
