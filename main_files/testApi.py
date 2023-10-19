@@ -5,7 +5,7 @@ from main_files.errorCalls import returnResponse
 
 def get_domains():
     with open("domains.txt") as f:
-        return [line.strip() for line in f]
+        return [line.strip() for line in f if line.strip() != ""]
 
 
 def make_api_call(domain, years, api_key):
